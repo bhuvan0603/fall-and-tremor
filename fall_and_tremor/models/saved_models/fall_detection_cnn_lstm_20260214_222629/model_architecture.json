@@ -1,0 +1,106 @@
+{
+  "model_name": "Fall_Detection_CNN_LSTM",
+  "input_shape": [
+    200,
+    6
+  ],
+  "total_parameters": 80321,
+  "layers": [
+    {
+      "name": "conv1d_1",
+      "type": "Conv1D",
+      "config": {
+        "filters": 64,
+        "kernel_size": 3,
+        "activation": "linear"
+      }
+    },
+    {
+      "name": "batch_norm_1",
+      "type": "BatchNormalization",
+      "config": {}
+    },
+    {
+      "name": "relu_1",
+      "type": "Activation",
+      "config": {
+        "activation": "relu"
+      }
+    },
+    {
+      "name": "maxpool_1",
+      "type": "MaxPooling1D",
+      "config": {}
+    },
+    {
+      "name": "dropout_1",
+      "type": "Dropout",
+      "config": {}
+    },
+    {
+      "name": "conv1d_2",
+      "type": "Conv1D",
+      "config": {
+        "filters": 128,
+        "kernel_size": 3,
+        "activation": "linear"
+      }
+    },
+    {
+      "name": "batch_norm_2",
+      "type": "BatchNormalization",
+      "config": {}
+    },
+    {
+      "name": "relu_2",
+      "type": "Activation",
+      "config": {
+        "activation": "relu"
+      }
+    },
+    {
+      "name": "maxpool_2",
+      "type": "MaxPooling1D",
+      "config": {}
+    },
+    {
+      "name": "dropout_2",
+      "type": "Dropout",
+      "config": {}
+    },
+    {
+      "name": "lstm_1",
+      "type": "LSTM",
+      "config": {
+        "units": 64,
+        "activation": "tanh"
+      }
+    },
+    {
+      "name": "dropout_lstm",
+      "type": "Dropout",
+      "config": {}
+    },
+    {
+      "name": "dense_1",
+      "type": "Dense",
+      "config": {
+        "units": 64,
+        "activation": "relu"
+      }
+    },
+    {
+      "name": "dropout_dense",
+      "type": "Dropout",
+      "config": {}
+    },
+    {
+      "name": "output",
+      "type": "Dense",
+      "config": {
+        "units": 1,
+        "activation": "sigmoid"
+      }
+    }
+  ]
+}

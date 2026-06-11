@@ -1,0 +1,36 @@
+r60ofh 4 100
+g2r60of.rit format? gain? ...
+s6r60of.let format? gain?
+s7r60of.rit format? gain?
+s8r60of.let format? gain?
+#------------------------------------------------------------------------
+# SUBJECTS WITH HIGH AMPLITUDE TREMOR:
+# REST TREMOR, 60 MINUTES AFTER DBS STOPPED (MEDICATION OFF) (n=4 files)
+#------------------------------------------------------------------------
+SUBJ   FILE         RANGE VELOCITY LASER  RATE SAMPLES
+g1     
+g2     g2r60of.rit  2.0   m/s      0-1    100  6162
+v3     
+v4     
+v5     
+s6     s6r60of.let  1.0   m/s      0-1    100  7218
+s7     s7r60of.rit  0.5   mm/s     0-0.2  100  6300
+s8     s8r60of.let  2.0   m/s      0-1    100  6726
+#----------------------------------------------------------------------------
+# SUBJ:  g = GPi = Globus Pallidus interna
+#        v = Vim = Ventro-intermediate nucleus of the thalamus
+#        s = STN = subthalamic nucleus
+# RANGE:    Range (V)  Precision (+/- mm/s)
+#               2.0        1.0 
+#               1.0        0.5
+#               0.5        0.25
+#               0.2        0.1
+#               0.1        0.05
+# VELOCITY: units of velocity in recordings 
+#           (mm/s or m/s)
+# LASER: laser speed setting 
+#        (0-0.2 m/s or 0-1 m/s)
+# RATE: sampling rate in Hz
+# 
+# SAMPLES: number of samples in recording
+#----------------------------------------------------------------------------

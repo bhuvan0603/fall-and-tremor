@@ -1,0 +1,123 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Data files (large datasets)
+data/raw/*
+data/processed/*
+data/splits/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/splits/.gitkeep
+
+# SisFall Dataset (too large for git)
+SisFall_dataset/
+dataset/
+
+# Model files (large)
+models/saved_models/*.h5
+models/saved_models/*.pb
+models/saved_models/*.pt
+models/saved_models/*.onnx
+models/checkpoints/*.h5
+models/logs/*
+!models/saved_models/.gitkeep
+!models/checkpoints/.gitkeep
+!models/logs/.gitkeep
+
+# Uploaded files
+app/uploads/*
+!app/uploads/.gitkeep
+
+# Logs
+*.log
+logs/
+
+# TensorFlow
+*.ckpt*
+*.pb
+saved_model/
+
+# PyTorch
+*.pth
+*.pt
+
+# Pickled files
+*.pkl
+*.pickle
+
+# CSV output files
+*.csv
+!test_samples/*.csv
+
+# Testing
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Environment variables
+.env
+.env.local
+
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# Documentation builds
+docs/_build/
+site/

@@ -1,0 +1,40 @@
+r30ofl 8 100
+g9r30of.rit format? gain? ...
+g10r30of.let format? gain?
+g11r30of.let format? gain?
+g12r30of.rit format? gain?
+g13r30of.rit format? gain?
+s14r30of.rit format? gain?
+s15r30of.rit format? gain?
+s16r30of.let format? gain?
+#------------------------------------------------------------------------
+# SUBJECTS WITH LOW AMPLITUDE TREMOR:
+# REST TREMOR, 30 MINUTES AFTER DBS STOPPED (MEDICATION OFF) (n=8 files)
+#------------------------------------------------------------------------
+# SUBJ   FILE         RANGE VELOCITY LASER  RATE SAMPLES
+# g9     g9r30of.rit  0.5   mm/s     0-0.2  100  6318
+# g10    g10r30of.let 0.5   mm/s     0-0.2  100  6198
+# g11    g11r30of.let 0.1   mm/s     0-0.2  100  6594
+# g12    g12r30of.rit 0.2   mm/s     0-0.2  100  6354
+# g13    g13r30of.rit 0.2   mm/s     0-0.2  100  7140
+# s14    s14r30of.rit 0.5   mm/s     0-0.2  100  6276
+# s15    s15r30of.rit 0.5   mm/s     0-0.2  100  6438
+# s16    s16r30of.let 0.5   mm/s     0-0.2  100  6588
+#----------------------------------------------------------------------------
+# SUBJ:  g = GPi = Globus Pallidus interna
+#        v = Vim = Ventro-intermediate nucleus of the thalamus
+#        s = STN = subthalamic nucleus
+# RANGE:    Range (V)  Precision (+/- mm/s)
+#               2.0        1.0 
+#               1.0        0.5
+#               0.5        0.25
+#               0.2        0.1
+#               0.1        0.05
+# VELOCITY: units of velocity in recordings 
+#           (mm/s or m/s)
+# LASER: laser speed setting 
+#        (0-0.2 m/s or 0-1 m/s)
+# RATE: sampling rate in Hz
+# 
+# SAMPLES: number of samples in recording
+#----------------------------------------------------------------------------

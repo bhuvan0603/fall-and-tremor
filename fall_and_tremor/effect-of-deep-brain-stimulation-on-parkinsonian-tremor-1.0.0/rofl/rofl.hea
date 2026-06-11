@@ -1,0 +1,40 @@
+rofl 8 100
+g9rof.rit format? gain? ...
+g10rof.let format? gain?
+g11rof.let format? gain?
+g12rof.rit format? gain?
+g13rof.rit format? gain?
+s14rof.rit format? gain?
+s15rof.rit format? gain?
+s16rof.let format? gain?
+#-----------------------------------------------------------
+# SUBJECTS WITH LOW AMPLITUDE TREMOR:
+# REST TREMOR, CONDITION: DBS OFF, MEDICATION OFF (n=8 files)
+#-----------------------------------------------------------
+# SUBJ   FILE       RANGE VELOCITY LASER  RATE SAMPLES
+# g9     g9rof.rit  0.5   mm/s     0-0.2  100  6354
+# g10    g10rof.let 0.5   mm/s     0-0.2  100  6180
+# g11    g11rof.let 0.1   mm/s     0-0.2  100  6306
+# g12    g12rof.rit 0.2   mm/s     0-0.2  100  6360
+# g13    g13rof.rit 0.2   mm/s     0-0.2  100  7230
+# s14    s14rof.rit 0.5   mm/s     0-0.2  100  6492
+# s15    s15rof.rit 0.5   mm/s     0-0.2  100  6300
+# s16    s16rof.let 0.5   mm/s     0-0.2  100  6594
+#----------------------------------------------------------------------------
+# SUBJ:  g = GPi = Globus Pallidus interna
+#        v = Vim = Ventro-intermediate nucleus of the thalamus
+#        s = STN = subthalamic nucleus
+# RANGE:    Range (V)  Precision (+/- mm/s)
+#               2.0        1.0 
+#               1.0        0.5
+#               0.5        0.25
+#               0.2        0.1
+#               0.1        0.05
+# VELOCITY: units of velocity in recordings 
+#           (mm/s or m/s)
+# LASER: laser speed setting 
+#        (0-0.2 m/s or 0-1 m/s)
+# RATE: sampling rate in Hz
+# 
+# SAMPLES: number of samples in recording
+#----------------------------------------------------------------------------

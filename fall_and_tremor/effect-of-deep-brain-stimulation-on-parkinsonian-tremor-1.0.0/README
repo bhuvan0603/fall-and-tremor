@@ -1,0 +1,85 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  README : contribution to PhysioBank 
+%  of PhysioNet: www.physionet.org
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+----------------------------------------------------
+Name of database:
+----------------------------------------------------
+DBSPDTREMOR
+Effect of Deep Brain Stimulation on Parkinsonian Tremor
+
+----------------------------------------------------
+Name of creator(s) of database:
+----------------------------------------------------
+Anne Beuter
+Michele S. Titcombe
+Leon Glass
+
+----------------------------------------------------
+Description of database:
+----------------------------------------------------
+
+  This database contains recordings of rest tremor velocity in the index
+finger of 16 subjects with Parkinson's disease (PD) who receive chronic
+high frequency electrical deep brain stimulation (DBS) either uni- or
+bi-laterally within one of three targets: the ventro-intermediate
+nucleus of the thalamus (Vim) (n=3), the internal Globus pallidus (GPi)
+(n=7) or the subthalamic nucleus (STN) (n=8).  All participants were
+clinically stable at the time of the recordings, they did not show
+cognitive impairment, and did not suffer from a major depressive
+disorder.  
+
+ The surgical procedure for high frequency deep brain stimulation
+involves implanting an electrode into subcortical structures (Vim, GPi
+or STN) for long-term stimulation at frequencies greater than 100 Hz.
+The mechanism by which high frequency DBS suppresses tremor and reduces
+other symptoms in PD is unknown.
+
+  The raw data were obtained using a low intensity velocity-transducing
+laser that was directed at a piece of reflective paper on the subject's
+index finger tip, with the output voltage proportional to the velocity of
+the finger.  Tremor was recorded for approximately 60 seconds under various
+conditions:
+(1) two conditions of DBS (on-off) and two conditions of medication
+    (L-dopa on-off) 
+    [total: 54 recordings of approx 60 seconds each]
+(2) every 15 minutes when DBS was stopped for 60 minutes (medication off)
+    [total: 46 recordings of approx 60 seconds each]
+Please note that not all subjects were tested under all conditions.
+
+----------------------------------------------------
+References to any published works that describe or
+make use of the database, in the form in which these
+works should be cited in any future publications
+----------------------------------------------------
+
+Beuter, A., Titcombe, M.S., Richer, F., Gross, C., Guehl, D.,
+2001. Effect of deep brain stimulation on amplitude and frequency
+characteristics of rest tremor in Parkinson's disease. Thalamus &
+Related Systems, Volume 1 (3): 203-211 (published by Elsevier Science).
+
+----------------------------------------------------
+Contact information:
+----------------------------------------------------
+(1) Dr. Anne Beuter
+    Faculte des Sciences du Sport et de l'Education Physique
+    Universite Montpellier I
+    700, avenue du Pic Saint-Loup
+    F-34090 Montpellier, France
+    a.beuter@staps.univ-montp1.fr
+(2) Dr. Michele Titcombe
+    Centre for Nonlinear Dynamics in Physiology and Medicine
+    McGill University
+    3655, promenade Sir William Osler
+    Montreal, QC, Canada
+    titcombe@cnd.mcgill.ca
+(3) Dr. Leon Glass
+    Centre for Nonlinear Dynamics in Physiology and Medicine
+    McGill University
+    3655, promenade Sir William Osler
+    Montreal, QC, Canada
+    glass@cnd.mcgill.ca
+

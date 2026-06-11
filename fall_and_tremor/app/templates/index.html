@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fall &amp; Tremor Detection System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+<div class="container">
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <i class="fas fa-video"></i>
+                <h1>Fall &amp; Tremor Detection</h1>
+            </div>
+            <div class="status-indicator" id="statusIndicator">
+                <span class="status-dot"></span>
+                <span class="status-text">System Ready</span>
+            </div>
+        </div>
+        <p class="subtitle">
+            AI-Powered Fall Detection &amp; Tremor Analysis
+        </p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- ================= VIDEO UPLOAD SECTION ================= -->
+        <section class="upload-section">
+            <div class="card">
+                <h2><i class="fas fa-video"></i> Upload Video for Fall Detection</h2>
+                <p class="description">
+                    Upload a video file. The system will analyze motion patterns 
+                    and detect potential fall events automatically.
+                </p>
+
+                <div class="upload-area" id="videoUploadArea">
+                    <div class="upload-icon">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h3>Drag & Drop Video File Here</h3>
+                    <p>or</p>
+                    <label for="videoFileInput" class="btn btn-primary">
+                        <i class="fas fa-folder-open"></i> Browse Videos
+                    </label>
+                    <input type="file" id="videoFileInput"
+                           accept=".mp4,.avi,.mov,.mkv,.webm"
+                           style="display: none;">
+                    <p class="file-info">
+                        Supported formats: MP4, AVI, MOV, MKV, WEBM | Max size: 100MB
+                    </p>
+                </div>
+
+                <div class="selected-file" id="selectedVideoFile" style="display: none;">
+                    <i class="fas fa-file-video"></i>
+                    <span id="videoFileName"></span>
+                    <button class="btn-remove" id="removeVideoFile">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+
+                <button class="btn btn-success btn-block"
+                        id="analyzeVideoBtn"
+                        disabled>
+                    <i class="fas fa-play-circle"></i>
+                    Analyze Video for Falls
+                </button>
+            </div>
+        </section>
+
+        <!-- ================= LOADING OVERLAY ================= -->
+        <div class="loading-overlay"
+             id="videoLoadingOverlay"
+             style="display: none;">
+            <div class="loading-content">
+                <div class="spinner"></div>
+                <h3>Analyzing Video...</h3>
+                <p id="videoLoadingText">
+                    Processing frames for fall detection
+                </p>
+            </div>
+        </div>
+
+        <!-- ================= RESULTS SECTION ================= -->
+        <section class="results-section"
+                 id="videoResultsSection"
+                 style="display: none;">
+            <div class="card">
+
+                <h2><i class="fas fa-chart-line"></i> Video Analysis Results</h2>
+
+                <!-- Final Decision -->
+                <div class="result-box" id="videoDecisionBox">
+                    <div class="result-icon" id="videoResultIcon">
+                        <i class="fas fa-question"></i>
+                    </div>
+                    <h3 id="videoResultTitle">Analyzing...</h3>
+                    <p id="videoResultDescription">
+                        Processing video...
+                    </p>
+                </div>
+
+                <!-- Metrics -->
+                <div class="metrics-grid">
+
+                    <div class="metric-card">
+                        <h4><i class="fas fa-info-circle"></i> Video Info</h4>
+                        <div class="metric-detail">
+                            <span>Duration:</span>
+                            <span id="videoDuration">-</span>
+                        </div>
+                        <div class="metric-detail">
+                            <span>Resolution:</span>
+                            <span id="videoResolution">-</span>
+                        </div>
+                        <div class="metric-detail">
+                            <span>FPS:</span>
+                            <span id="videoFPS">-</span>
+                        </div>
+                    </div>
+
+                    <div class="metric-card">
+                        <h4><i class="fas fa-search"></i> Analysis Stats</h4>
+                        <div class="metric-detail">
+                            <span>Falls Detected:</span>
+                            <span id="fallsDetected">-</span>
+                        </div>
+                        <div class="metric-detail">
+                            <span>Analyzed Frames:</span>
+                            <span id="analyzedFrames">-</span>
+                        </div>
+                        <div class="metric-detail">
+                            <span>Total Frames:</span>
+                            <span id="totalFrames">-</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Screenshots -->
+                <div id="screenshotsContainer" style="display: none;">
+                    <h3><i class="fas fa-images"></i> Detected Falls</h3>
+                    <div class="screenshots-grid" id="screenshotsGrid">
+                        <!-- Screenshots dynamically added -->
+                    </div>
+                </div>
+
+                <!-- Timeline -->
+                <div id="fallEventsContainer" style="display: none;">
+                    <h3><i class="fas fa-clock"></i> Fall Events Timeline</h3>
+                    <div class="fall-events" id="fallEventsList">
+                        <!-- Events dynamically added -->
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="action-buttons">
+                    <button class="btn btn-primary"
+                            id="analyzeAnotherVideoBtn">
+                        <i class="fas fa-redo"></i>
+                        Analyze Another Video
+                    </button>
+
+                    <button class="btn btn-secondary"
+                            id="downloadVideoReport">
+                        <i class="fas fa-download"></i>
+                        Download Report
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- EMAIL ALERT SETTINGS SECTION HIDDEN - configure manually via app/email_settings.json -->
+
+        <!-- ================= TREMOR DETECTION SECTION ================= -->
+        <section class="tremor-section">
+            <div class="card">
+                <h2><i class="fas fa-wave-square"></i> Tremor Detection (Sensor Data)</h2>
+                <p class="description">
+                    Upload a CSV file containing velocity / accelerometer data.
+                    The system analyses frequency-domain features to detect Parkinsonian tremor.
+                </p>
+
+                <!-- Tremor model status badge -->
+                <div class="tremor-model-badge" id="tremorModelBadge">
+                    <span class="badge badge-off">Loading&hellip;</span>
+                </div>
+
+                <!-- Upload area -->
+                <div class="upload-area" id="tremorUploadArea">
+                    <div class="upload-icon">
+                        <i class="fas fa-file-csv"></i>
+                    </div>
+                    <h3>Drag &amp; Drop CSV File Here</h3>
+                    <p>or</p>
+                    <label for="tremorFileInput" class="btn btn-primary">
+                        <i class="fas fa-folder-open"></i> Browse CSV Files
+                    </label>
+                    <input type="file" id="tremorFileInput"
+                           accept=".csv"
+                           style="display: none;">
+                    <p class="file-info">
+                        Expected columns: <code>time_s, velocity</code> &nbsp;|&nbsp; Sample rate: 100 Hz
+                    </p>
+                </div>
+
+                <!-- Selected file display -->
+                <div class="selected-file" id="tremorSelectedFile" style="display: none;">
+                    <i class="fas fa-file-csv"></i>
+                    <span id="tremorFileName"></span>
+                    <button class="btn-remove" id="tremorRemoveFile">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+
+                <!-- Demo file picker -->
+                <div class="tremor-demo-picker">
+                    <span class="demo-label"><i class="fas fa-flask"></i> Or try a demo file:</span>
+                    <select id="tremorDemoSelect">
+                        <option value="">-- select demo --</option>
+                    </select>
+                    <button class="btn btn-secondary btn-sm" id="tremorLoadDemo">
+                        <i class="fas fa-download"></i> Load
+                    </button>
+                </div>
+
+                <button class="btn btn-success btn-block"
+                        id="tremorAnalyzeBtn"
+                        disabled>
+                    <i class="fas fa-microscope"></i>
+                    Analyze for Tremor
+                </button>
+            </div>
+        </section>
+
+        <!-- ================= TREMOR LOADING ================= -->
+        <div class="loading-overlay" id="tremorLoadingOverlay" style="display: none;">
+            <div class="loading-content">
+                <div class="spinner"></div>
+                <h3>Analyzing Signal&hellip;</h3>
+                <p>Extracting frequency features &amp; running inference</p>
+            </div>
+        </div>
+
+        <!-- ================= TREMOR RESULTS ================= -->
+        <section class="results-section" id="tremorResultsSection" style="display: none;">
+            <div class="card">
+                <h2><i class="fas fa-wave-square"></i> Tremor Analysis Results</h2>
+
+                <!-- Verdict box -->
+                <div class="result-box" id="tremorDecisionBox">
+                    <div class="result-icon" id="tremorResultIcon">
+                        <i class="fas fa-question"></i>
+                    </div>
+                    <h3 id="tremorResultTitle">Analyzing&hellip;</h3>
+                    <p  id="tremorResultDescription">Processing signal&hellip;</p>
+                </div>
+
+                <!-- Summary metrics -->
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <h4><i class="fas fa-chart-area"></i> Signal Info</h4>
+                        <div class="metric-detail">
+                            <span>Duration:</span>
+                            <span id="tremorDuration">-</span>
+                        </div>
+                        <div class="metric-detail">
+                            <span>Samples:</span>
+                            <span id="tremorSamples">-</span>
+                        </div>
+                        <div class="metric-detail">
+                            <span>Windows:</span>
+                            <span id="tremorWindows">-</span>
+                        </div>
+                    </div>
+
+                    <div class="metric-card">
+                        <h4><i class="fas fa-brain"></i> Model Output</h4>
+                        <div class="metric-detail">
+                            <span>Confidence:</span>
+                            <span id="tremorConfidence">-</span>
+                        </div>
+                        <div class="metric-detail">
+                            <span>Tremor windows:</span>
+                            <span id="tremorWindowPct">-</span>
+                        </div>
+                        <div class="progress-bar" style="margin-top:8px;">
+                            <div class="progress-fill" id="tremorProgressFill" style="width:0%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Per-window timeline -->
+                <div id="tremorTimelineContainer" style="display:none;">
+                    <h3><i class="fas fa-clock"></i> Window-by-Window Timeline</h3>
+                    <div class="tremor-timeline" id="tremorTimeline"></div>
+                </div>
+
+                <!-- Action buttons -->
+                <div class="action-buttons">
+                    <button class="btn btn-primary" id="tremorAnalyzeAnother">
+                        <i class="fas fa-redo"></i> Analyze Another File
+                    </button>
+                    <button class="btn btn-secondary" id="tremorDownloadReport">
+                        <i class="fas fa-download"></i> Download Report
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SYSTEM INFO ================= -->
+        <section class="info-section">
+            <div class="card">
+                <h2><i class="fas fa-info-circle"></i> About This System</h2>
+
+                <div class="info-grid">
+
+                    <div class="info-item">
+                        <i class="fas fa-eye"></i>
+                        <h4>Computer Vision Based</h4>
+                        <p>
+                            Fall detection works directly from video analysis.
+                            No wearable devices required.
+                        </p>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-chart-bar"></i>
+                        <h4>Motion Pattern Recognition</h4>
+                        <p>
+                            Detects activity → sustained stillness pattern
+                            using frame differencing.
+                        </p>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-bolt"></i>
+                        <h4>Efficient Processing</h4>
+                        <p>
+                            Videos analyzed at reduced FPS for fast,
+                            real-time capable processing.
+                        </p>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Two-Phase Confirmation</h4>
+                        <p>
+                            Candidate detection + confirmation window
+                            reduces false positives.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Fall &amp; Tremor Detection System | Flask + OpenCV + XGBoost</p>
+    </footer>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "enabled": true,
+  "smtp_host": "smtp.gmail.com",
+  "smtp_port": 587,
+  "sender_email": "taryareddy123@gmail.com",
+  "sender_password": "pwey umjm cmsm gdzw",
+  "recipient_email": "akashreddy12390@gmail.com"
+}

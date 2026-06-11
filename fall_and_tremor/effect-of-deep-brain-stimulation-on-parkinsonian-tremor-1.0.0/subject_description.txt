@@ -1,0 +1,60 @@
+#-------------------------
+# subject_description.txt
+#-------------------------
+#
+#--------------------------------------------
+# SUBJECTS WITH HIGH AMPLITUDE TREMOR (n=8):
+#--------------------------------------------
+SUBJECT               g1    g2    v3    v4    v5    s6    s7    s8       
+AGE (YRS)             54    52    71    67    40    61    59    64
+GENDER                M     M     F     M     M     F     F     M
+STIM TARGET           GPi   GPi   Vim   Vim   Vim   STN   STN   STN
+BI/UNI-LATERAL        Bi    Uni   Uni   Uni   Uni   Bi    Bi    Bi
+EFF FREQ (Hz)         185   160   130   185   135   185   185   135
+INEFF FREQ (Hz)       90    60    65    60    60    60    90    65
+INTENSITY (V)         2.4   3.7   3.3   5.3   1.3   2.0   2.4   2.8
+PULSE WIDTH (mu sec)  90    120   60    90    90    90    90    90
+MODE (CONT/CYCL)      Cont  Cycl  Cont  Cont  Cont  Cycl  Cycl  Cont
+STIM CONTACTS         ---.  -...  -...  ..--  ..--  .--.  ..-.  --..
+YEAR DIAGNOSED        1985  1985  1989  1990  1999  1990  1984  1990
+YEAR DBS RIGHT        1996        1993        2000  1999  1999  2000
+YEAR DBS LEFT         1996  1994        1996        1999  1999  2000
+TOT DAILY MED (mg)     300  1100   500   600  1000   300  1000  1000
+150% SINGLE DOSE (mg)  150   300   150   300   300   200   375   300  
+#-------------------------------------------
+# SUBJECTS WITH LOW AMPLITUDE TREMOR (n=8):
+#-------------------------------------------
+SUBJECT               g9    g10   g11   g12   g13   s14   s15   s16
+AGE (YRS)             68    59    57    54    50    57    40    37
+GENDER                M     M     M     M     F     M     M     F
+STIM TARGET           GPi   GPi   GPi   GPi   GPi   STN   STN   STN
+BI/UNI-LATERAL        Bi    Bi    Bi    Bi    Bi    Bi    Bi    Bi
+EFF FREQ (Hz)         185   185   185   185   130   185   135   185
+INEFF FREQ (Hz)       90    60    60    60    60    60    40    60
+INTENSITY (V)         3.7   3.7   4.6   4.0   4.0   2.8   2.5   2.2
+PULSE WIDTH (mu sec)  90    70    90    90    90    90    90    90
+MODE (CONT/CYCL)      Cont  Cont  Cont  Cycl  Cont  Cont  Cycl  Cycl
+STIM CONTACTS         ---.  --..  .+--  ---.  +--.  ...-  .--.  ---.
+YEAR DIAGNOSED        1981  1975  1986  1989  1989  1974  1992  1992
+YEAR DBS RIGHT        1998  1995  1994  1996  1998  1999  1999  2000
+YEAR DBS LEFT         1998  1995  1997  1999  1999  1999  1999  2000 
+TOT DAILY MED (mg)    1200   900  1200  1100  1100   400   400   300
+150% SINGLE DOSE (mg)  300   375   450   450   200   150   150   150
+#----------------------------------------------------------------------------
+# STIM TARGET: GPi = Globus Pallidus interna
+#              Vim = Ventro-intermediate nucleus of the thalamus
+#              STN = subthalamic nucleus
+#
+# MODE: Cont = continuous stimulation
+#       Cycl = cyclic stimulation (e.g. 1 minute on, 1 second off)
+#
+# STIM CONTACTS: listed in order of proximal distal direction 
+#                (- negative polarity) (+ positive polarity) (. not stimulated)
+# 
+# YEAR DBS RIGHT: right brain DBS
+# YEAR DBS LEFT: left brain DBS
+# 
+# TOT DAILY MED: total medication of morning, noon and evening doses
+# 
+# 150% SINGLE DOSE: dose taken before testing "medication on" condition
+#----------------------------------------------------------------------------

@@ -1,0 +1,257 @@
+<!--#set var="TITLE" value="Effect of Deep Brain Stimulation on Parkinsonian Tremor"-->
+<!--#set var="USELOCALCSS" value="1"-->
+<!--#include virtual="/head.shtml"-->
+
+<!--<CENTER>
+[<A HREF="dbspdtremorglossary.html">Glossary of Terms</A>] |
+[<A HREF="dbspdtremorabbrev.html">Abbreviations</A>]
+</CENTER>-->
+
+<p>
+The recordings of this database are of rest tremor velocity in the index
+finger of 16 subjects with Parkinson's disease (PD) who receive chronic
+high frequency electrical deep brain stimulation (DBS) either uni- or
+bi-laterally within one of three targets:</p>
+
+<ul>
+<li> Vim = the ventro-intermediate
+nucleus of the thalamus (n=3), </li>
+<li> GPi = the internal Globus pallidus (n=7), or</li>
+<li> STN = the subthalamic nucleus (n=6).</li>
+</ul>
+<P>
+This surgical procedure involves implanting an electrode into
+subcortical structures (Vim, GPi or STN) for long-term stimulation at
+frequencies greater than 100 Hz.  The mechanism by which high frequency
+DBS suppresses tremor and reduces other symptoms in PD is unknown.</p>
+
+<P>
+Parkinson&rsquo;s disease is characterized by the progressive loss of dopamine
+neurons in the substantia nigra of the midbrain, and is associated with
+motor symptoms including tremor (usually rest tremor, though sometimes
+postural tremor), bradykinesia and rigidity.  In
+Parkinson&rsquo;s disease, tremor becomes more regular or harmonic, its
+frequency is shifted to a lower range (typically 4&ndash;6 Hz), its amplitude
+increases, the shape of its oscillations changes, and it fluctuates over
+time.  These changes are subtle and intermittent at first, becoming more
+permanent and obvious as the disease progresses.</p>
+
+<div class="outer2"><div class="inner2">
+<img src="g2.gif" alt="Parkinsonian rest tremor velocity recording (subject g2) under four conditions" style="width: 514px;">
+<p style="width: 514px; margin: 1em auto; text-align: left;">
+<em>Figure 1. Two seconds of Parkinsonian rest tremor velocity
+(metres/second) recordings from subject g2 (stimulator implanted in the
+GPi) under four conditions: (a) no stimulation and no medication, (b)
+deep brain stimulation and no medication, (c) no stimulation and 150%
+medication, (d) deep brain stimulation and 150% medication.  <B>Note the
+zoomed vertical scale in (b), (c) and (d).</B></em></p>
+</div></div>
+
+<P>
+Chronic high frequency deep brain stimulation of the Vim can decrease
+tremor amplitude in a spectacular way.  Deep brain
+stimulation of the GPi and STN have been shown to relieve not only
+tremor but also other symptoms of PD such as rigidity and dyskinesia.
+See Figure 1 for an example of the effect of deep brain stimulation of
+the GPi on tremor.</p>
+<P>
+
+<div class="outer2"><div class="inner2">
+<img src="vlaser.gif" alt="Velocity laser recording of rest tremor" style="width: 426px;">
+<p style="width: 426px; margin: 1em auto; text-align: left;">
+<em>Figure 2. Velocity laser recording of rest tremor.</em>
+</p>
+</div></div>
+
+<P>
+The raw data were obtained using a
+low intensity velocity-transducing laser that was directed at a piece of
+reflective paper on the subject&rsquo;s index finger tip (Figure 2), with the output
+voltage proportional to the velocity of the finger.</p>
+
+<h2>DBS/Medication Conditions:</h2>
+
+<p>Tremor was recorded for approximately 60 seconds under various
+conditions:</p>
+<ol>
+<li> two conditions of DBS (on-off) and two conditions of medication
+    (L-dopa on-off)<br>
+    [total: 55 recordings of approx 60 seconds each]
+<li> every 15 minutes when DBS was stopped for 60 minutes (medication off)<br>
+    [total: 46 recordings of approx 60 seconds each]
+</ol>
+<p>Please note that not all subjects were tested under all conditions.</p>
+
+<P>
+For the &quot;medication off&quot; condition, the subject did not take
+any medication for at least 12 hours.  For the &quot;medication on&quot;
+condition, the subject took 150% of his or her morning dose of
+dispersible Modopar and testing began after the neurologist determined
+the medication had taken effect (approximately 40 minutes).</p>
+
+<h2>Subjects:</h2>
+
+<p>The 16 subjects can be divided into two groups: </p>
+
+<ol>
+<li> Subjects 1&ndash;8 with high amplitude tremor (HAT) who are receiving DBS
+to relieve tremor (Group 1), and </li>
+<li> Subjects 9&ndash;16 with low amplitude tremor (LAT) who are receiving DBS to
+relieve other symptoms such as rigidity or dyskinesias (Group 2).</li>
+</ol>
+
+<p>The file <A HREF="subject_description.txt">subject_description.txt</A>
+contains information on the 16 subjects:</p>
+
+<div class="edbtable">
+<table>
+<tr><th>Information</th><th>Description</th></tr>
+<tr><td>SUBJECT</td><td>2 character subject identification: <br>
+Stimulation target (v=Vim, s=STN, g=GPi), and<br>
+Subject number (1-16)</td></tr>
+<tr><td>AGE</td><td>Age at the time of testing (years)</td></tr>
+<tr><td>GENDER</td><td>Male (n=11) or female (n=5) </td></tr>
+<tr><td>STIM TARGET</td><td>Vim = ventro-intermediate nucleus
+of the thalamus<br>GPi = internal Globus Pallidus<br>STN=subthalamic
+nucleus </td></tr>
+<tr><td>BI/UNI-LATERAL</td><td>Bilateral stimulation (n=12) or
+unilateral stimulation (n=4)</td></tr>
+<tr><td>EFF FREQ</td><td>Frequency (Hz) of effective
+stimulation (> 100 Hz) </td></tr>
+<tr><td>INEFF FREQ</td><td>Frequency (Hz) of so-called ineffective
+stimulation (< 100 Hz) </td></tr>
+<tr><td>INTENSITY</td><td>Stimulation intensity (V)</td></tr>
+<tr><td>PULSE WIDTH</td><td>Stimulation pulse width (&micro;sec)</td></tr>
+<tr><td>MODE</td><td>Cont = continuous
+stimulation,<br>Cycl=cyclic stimulation (e.g. 1 minute on, 1 second
+off)</td></tr> 
+<tr><td>STIM CONTACTS</td><td>Listed in order of proximal
+distal direction on quadripolar stimulating electrode:<br>
+- negative polarity<br>+ positive polarity<br>. not stimulated
+</td></tr> 
+<tr><td>YEAR DIAGNOSED</td><td>Year diagnosed with
+Parkinson's disease</td></tr> 
+<tr><td>YEAR DBS RIGHT</td><td>Year of right brain DBS surgery</td></tr> 
+<tr><td>YEAR DBS LEFT</td><td>Year of left brain DBS surgery</td></tr> 
+<tr><td>TOT DAILY MED</td><td>Total medication of morning,
+noon and evening doses (mg)</td></tr> 
+<tr><td>150% SINGLE DOSE</td><td>Dose taken before testing
+&quot;medication on&quot; condition (mg)</td></tr> 
+</table>
+</div>
+
+<h2>Filename Structure:</h2>
+
+<p>The file name structure of the records is:</p>
+<ul>
+<li> 2 character subject identification: stimulation target (v=Vim,
+s=STN, g=GPi) and subject number (1&ndash;16)</li>
+<li> 1 character tremor type: r = resting tremor</li>
+<li> 1 character DBS condition: e = effective (> 100 Hz), o = no
+stimulation</li>
+<li> (optional) 2 character time since stimulator arrest: if a 2 digit
+number follows the DBS condition, it indicates the number of minutes
+since the stimulation was stopped</li>
+<li> 1 character medication condition: n= medication on, f=medication
+off</li>
+<li> 3 character extension indicates the side tested: let = left index
+finger tremor, rit = right index finger tremor</li>
+</ul>
+
+<h3>Filename Examples:</h3>
+
+<ul>
+<li><kbd>s6ren.let</kbd> contains a recording
+(approx. 60 sec) of rest tremor in the left index finger of subject 6 in
+the &quot;dbs on and medication on&quot; condition: the subject had
+taken 150 % of his or her morning dose of L-dopa and was receiving
+&quot;effective&quot; stimulation of the STN.</li>
+
+<li> <kbd>v4rof.rit</kbd> contains a recording
+(approx. 60 sec) of rest tremor in the right index finger of subject 4
+in the &quot;dbs off and medication off&quot; condition: the subject was
+off medication for at least 12 hours and the subject's stimulator
+(implanted in the Vim) was switched off.</li>
+
+<li> <kbd>g1r30of.rit</kbd> contains a recording
+(approx. 60 sec) of rest tremor in the right index finger of subject 1 at
+30-minutes after the stimulator (implanted in the GPi) was switched off.
+Also, this subject was off medication for at least 12 hours.</li>
+</ul>
+
+<h2>Tremor Recordings:</h2>
+
+<p>The rest tremor recordings can be classified as one of 8 categories, for
+subjects with high amplitude tremor (HAT) and for subjects with low
+amplitude tremor (LAT):</p>
+
+<ol>
+<li> <strong>ren:</strong> Deep brain stimulation on, Medication on<br>
+     HAT subjects: n=5 recordings<br>
+     LAT subjects: n=8 recordings</li>
+
+<li> <strong>ref:</strong> Deep brain stimulation on, Medication off<br>
+     HAT subjects: n=5 recordings<br>
+     LAT subjects: n=8 recordings</li>
+
+<li> <strong>ron:</strong> Deep brain stimulation off, Medication on<br>
+     HAT subjects: n=7 recordings<br>
+     LAT subjects: n=8 recordings</li>
+
+<li> <strong>rof:</strong> Deep brain stimulation off, Medication off<br>
+     HAT subjects: n=6 recordings<br>
+     LAT subjects: n=8 recordings</li>
+
+<li> <strong>r15of:</strong> Deep brain stimulation off for 15 minutes,
+     Medication off<br> 
+     HAT subjects: n=3 recordings<br>
+     LAT subjects: n=8 recordings</li>
+
+<li> <strong>r30of:</strong> Deep brain stimulation off for 30 minutes,
+     Medication off<br> 
+     HAT subjects: n=4 recordings<br>
+     LAT subjects: n=8 recordings</li>
+
+<li> <strong>r45of:</strong> Deep brain stimulation off for 45 minutes,
+     Medication off<br> 
+     HAT subjects: n=3 recordings<br>
+     LAT subjects: n=8 recordings</li>
+
+<li> <strong>r60of:</strong> Deep brain stimulation off for 60 minutes,
+     Medication off<br> 
+     HAT subjects: n=4 recordings<br>
+     LAT subjects: n=8 recordings</li>
+</ol>
+
+<table>
+<tr><td>Total:</td><td>HAT subjects: n=37 recordings<br>
+                       LAT subjects: n=64 recordings</td></tr>
+</table>
+
+<p>
+The file <A HREF="file_description.txt">file_description.txt</A>
+contains a summary of recordings per subject in each category.  </p>
+
+<h2>Reference:</h2>
+
+<div class="reference">
+<p>
+Beuter, A., Titcombe, M.S., Richer, F., Gross, C., Guehl, D., 2001.
+Effect of deep brain stimulation on amplitude and frequency
+characteristics of rest tremor in Parkinson's disease.  
+<em>Thalamus &amp; Related Systems</em>, Volume 1 (3): 203&ndash;211
+(published by Elsevier Science).</p>
+</div> <!-- end reference -->
+
+
+
+
+
+
+
+
+
+
+
+
+

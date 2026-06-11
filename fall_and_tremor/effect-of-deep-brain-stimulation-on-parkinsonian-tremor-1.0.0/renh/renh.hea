@@ -1,0 +1,38 @@
+renh 5 100
+g1ren.let format? gain? ...
+g2ren.rit format? gain?
+s6ren.let format? gain?
+s7ren.rit format? gain?
+s8ren.let format? gain?
+
+#-----------------------------------------------------------
+# SUBJECTS WITH HIGH AMPLITUDE TREMOR:
+# REST TREMOR, CONDITION: DBS ON, MEDICATION ON (n=5 files)
+#-----------------------------------------------------------
+# SUBJ   FILE      RANGE VELOCITY LASER  RATE SAMPLES
+# g1     g1ren.let 0.5   mm/s     0-0.2  100  6234
+# g2     g2ren.rit 0.2   mm/s     0-0.2  100  7680
+# v3     
+# v4     
+# v5     
+# s6     s6ren.let 0.2   mm/s     0-0.2  100  6288
+# s7     s7ren.rit 0.5   mm/s     0-0.2  100  6468
+# s8     s8ren.let 0.2   mm/s     0-0.2  100  6252
+#----------------------------------------------------------------------------
+# SUBJ:  g = GPi = Globus Pallidus interna
+#        v = Vim = Ventro-intermediate nucleus of the thalamus
+#        s = STN = subthalamic nucleus
+# RANGE:    Range (V)  Precision (+/- mm/s)
+#               2.0        1.0 
+#               1.0        0.5
+#               0.5        0.25
+#               0.2        0.1
+#               0.1        0.05
+# VELOCITY: units of velocity in recordings 
+#           (mm/s or m/s)
+# LASER: laser speed setting 
+#        (0-0.2 m/s or 0-1 m/s)
+# RATE: sampling rate in Hz
+# 
+# SAMPLES: number of samples in recording
+#----------------------------------------------------------------------------

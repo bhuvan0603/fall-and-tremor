@@ -1,0 +1,238 @@
+#----------------------
+# file_description.txt
+#----------------------
+#
+#=========================================================================
+#
+# FILES FOR SUBJECTS WITH HIGH AMPLITUDE TREMOR:
+#
+#-----------------------------------------------------------
+# SUBJECTS WITH HIGH AMPLITUDE TREMOR:
+# REST TREMOR, CONDITION: DBS ON, MEDICATION ON (n=5 files)
+#-----------------------------------------------------------
+SUBJ   FILE      RANGE VELOCITY LASER  RATE SAMPLES
+g1     g1ren.let 0.5   mm/s     0-0.2  100  6234
+g2     g2ren.rit 0.2   mm/s     0-0.2  100  7680
+v3     
+v4     
+v5     
+s6     s6ren.let 0.2   mm/s     0-0.2  100  6288
+s7     s7ren.rit 0.5   mm/s     0-0.2  100  6468
+s8     s8ren.let 0.2   mm/s     0-0.2  100  6252
+#-----------------------------------------------------------
+# SUBJECTS WITH HIGH AMPLITUDE TREMOR:
+# REST TREMOR, CONDITION: DBS ON, MEDICATION OFF (n=5 files)
+#-----------------------------------------------------------
+SUBJ   FILE      RANGE VELOCITY LASER  RATE SAMPLES
+g1     g1ref.let 0.5   mm/s     0-0.2  100  6690
+g2     g2ref.rit 0.2   mm/s     0-0.2  100  6336
+v3     
+v4     
+v5     
+s6     s6ref.let 0.2   mm/s     0-0.2  100  7260
+s7     s7ref.rit 0.5   mm/s     0-0.2  100  6402
+s8     s8ref.let 0.2   mm/s     0-0.2  100  7896
+#-----------------------------------------------------------
+# SUBJECTS WITH HIGH AMPLITUDE TREMOR:
+# REST TREMOR, CONDITION: DBS OFF, MEDICATION ON (n=7 files)
+#-----------------------------------------------------------
+SUBJ   FILE      RANGE VELOCITY LASER  RATE SAMPLES
+g1     g1ron.let 0.5   mm/s     0-0.2  100  6264
+g2     g2ron.rit 0.5   mm/s     0-0.2  100  7134
+v3     
+v4     v4ron.rit 2.0   m/s      0-1    100  6432
+v5     v5ron.let 1.0   m/s      0-0.2  100  7344
+s6     s6ron.let 0.5   mm/s     0-0.2  100  7356
+s7     s7ron.rit 0.5   mm/s     0-0.2  100  6234
+s8     s8ron.let 0.2   mm/s     0-0.2  100  6720
+#-----------------------------------------------------------
+# SUBJECTS WITH HIGH AMPLITUDE TREMOR:
+# REST TREMOR, CONDITION: DBS OFF, MEDICATION OFF (n=6 files)
+#-----------------------------------------------------------
+SUBJ   FILE      RANGE VELOCITY LASER  RATE SAMPLES
+g1     
+g2     g2rof.rit 2.0   m/s      0-1    100  7176
+v3     
+v4     v4rof.rit 2.0   m/s      0-1    100  6282
+v5     v5rof.let 2.0   m/s      0-1    100  3400
+s6     s6rof.let 1.0   m/s      0-1    100  9114
+s7     s7rof.rit 0.5   mm/s     0-0.2  100  6264
+s8     s8rof.let 2.0   m/s      0-1    100  6216
+#------------------------------------------------------------------------
+# SUBJECTS WITH HIGH AMPLITUDE TREMOR:
+# REST TREMOR, 15 MINUTES AFTER DBS STOPPED (MEDICATION OFF) (n=3 files)
+#------------------------------------------------------------------------
+SUBJ   FILE         RANGE VELOCITY LASER  RATE SAMPLES
+g1     
+g2     g2r15of.rit  2.0   m/s      0-1    100  6150
+v3     
+v4     
+v5     
+s6     s6r15of.let  1.0   m/s      0-1    100  7104
+s7     
+s8     s8r15of.let  2.0   m/s      0-1    100  8598
+#------------------------------------------------------------------------
+# SUBJECTS WITH HIGH AMPLITUDE TREMOR:
+# REST TREMOR, 30 MINUTES AFTER DBS STOPPED (MEDICATION OFF) (n=4 files)
+#------------------------------------------------------------------------
+SUBJ   FILE         RANGE VELOCITY LASER  RATE SAMPLES
+g1     
+g2     g2r30of.rit  2.0   m/s      0-1    100  9144
+v3     
+v4     
+v5     
+s6     s6r30of.let  1.0   m/s      0-1    100  7200
+s7     s7r30of.rit  0.5   mm/s     0-0.2  100  6510
+s8     s8r30of.let  2.0   m/s      0-1    100  8616
+#------------------------------------------------------------------------
+# SUBJECTS WITH HIGH AMPLITUDE TREMOR:
+# REST TREMOR, 45 MINUTES AFTER DBS STOPPED (MEDICATION OFF) (n=3 files)
+#------------------------------------------------------------------------
+SUBJ   FILE         RANGE VELOCITY LASER  RATE SAMPLES
+g1     
+g2     g2r45of.rit  2.0   m/s      0-1    100  6354
+v3     
+v4     
+v5     
+s6     s6r45of.let  1.0   m/s      0-1    100  8232
+s7     
+s8     s8r45of.let  2.0   m/s      0-1    100  8652
+#------------------------------------------------------------------------
+# SUBJECTS WITH HIGH AMPLITUDE TREMOR:
+# REST TREMOR, 60 MINUTES AFTER DBS STOPPED (MEDICATION OFF) (n=4 files)
+#------------------------------------------------------------------------
+SUBJ   FILE         RANGE VELOCITY LASER  RATE SAMPLES
+g1     
+g2     g2r60of.rit  2.0   m/s      0-1    100  6162
+v3     
+v4     
+v5     
+s6     s6r60of.let  1.0   m/s      0-1    100  7218
+s7     s7r60of.rit  0.5   mm/s     0-0.2  100  6300
+s8     s8r60of.let  2.0   m/s      0-1    100  6726
+#=========================================================================
+#
+# FILES FOR SUBJECTS WITH LOW AMPLITUDE TREMOR:
+#
+#-----------------------------------------------------------
+# SUBJECTS WITH LOW AMPLITUDE TREMOR:
+# REST TREMOR, CONDITION: DBS ON, MEDICATION ON (n=8 files)
+#-----------------------------------------------------------
+SUBJ   FILE       RANGE VELOCITY LASER  RATE SAMPLES
+g9     g9ren.rit  0.5   mm/s     0-0.2  100  6276
+g10    g10ren.let 0.5   mm/s     0-0.2  100  6180
+g11    g11ren.let 0.1   mm/s     0-0.2  100  6276
+g12    g12ren.rit 0.2   mm/s     0-0.2  100  6492
+g13    g13ren.rit 0.1   mm/s     0-0.2  100  6282
+s14    s14ren.rit 0.5   mm/s     0-0.2  100  6408
+s15    s15ren.rit 0.5   mm/s     0-0.2  100  7284
+s16    s16ren.let 0.2   mm/s     0-0.2  100  6300
+#-----------------------------------------------------------
+# SUBJECTS WITH LOW AMPLITUDE TREMOR:
+# REST TREMOR, CONDITION: DBS ON, MEDICATION OFF (n=8 files)
+#-----------------------------------------------------------
+SUBJ   FILE       RANGE VELOCITY LASER  RATE SAMPLES
+g9     g9ref.rit  0.5   mm/s     0-0.2  100  6174
+g10    g10ref.let 0.5   mm/s     0-0.2  100  6252
+g11    g11ref.let 0.1   mm/s     0-0.2  100  6396
+g12    g12ref.rit 0.2   mm/s     0-0.2  100  6714
+g13    g13ref.rit 0.2   mm/s     0-0.2  100  6564
+s14    s14ref.rit 0.5   mm/s     0-0.2  100  6282
+s15    s15ref.rit 0.5   mm/s     0-0.2  100  6228
+s16    s16ref.let 0.2   mm/s     0-0.2  100  7128
+#-----------------------------------------------------------
+# SUBJECTS WITH LOW AMPLITUDE TREMOR:
+# REST TREMOR, CONDITION: DBS OFF, MEDICATION ON (n=8 files)
+#-----------------------------------------------------------
+SUBJ   FILE       RANGE VELOCITY LASER  RATE SAMPLES
+g9     g9ron.rit  0.5   mm/s     0-0.2  100  9156
+g10    g10ron.let 0.5   mm/s     0-0.2  100  12108
+g11    g11ron.let 0.1   mm/s     0-0.2  100  6366
+g12    g12ron.rit 0.2   mm/s     0-0.2  100  7176
+g13    g13ron.rit 0.2   mm/s     0-0.2  100  6234
+s14    s14ron.rit 0.5   mm/s     0-0.2  100  6228
+s15    s15ron.rit 0.5   mm/s     0-0.2  100  6102
+s16    s16ron.let 0.5   mm/s     0-0.2  100  6696
+#-----------------------------------------------------------
+# SUBJECTS WITH LOW AMPLITUDE TREMOR:
+# REST TREMOR, CONDITION: DBS OFF, MEDICATION OFF (n=8 files)
+#-----------------------------------------------------------
+SUBJ   FILE       RANGE VELOCITY LASER  RATE SAMPLES
+g9     g9rof.rit  0.5   mm/s     0-0.2  100  6354
+g10    g10rof.let 0.5   mm/s     0-0.2  100  6180
+g11    g11rof.let 0.1   mm/s     0-0.2  100  6306
+g12    g12rof.rit 0.2   mm/s     0-0.2  100  6360
+g13    g13rof.rit 0.2   mm/s     0-0.2  100  7230
+s14    s14rof.rit 0.5   mm/s     0-0.2  100  6492
+s15    s15rof.rit 0.5   mm/s     0-0.2  100  6300
+s16    s16rof.let 0.5   mm/s     0-0.2  100  6594
+#------------------------------------------------------------------------
+# SUBJECTS WITH LOW AMPLITUDE TREMOR:
+# REST TREMOR, 15 MINUTES AFTER DBS STOPPED (MEDICATION OFF) (n=8 files)
+#------------------------------------------------------------------------
+SUBJ   FILE         RANGE VELOCITY LASER  RATE SAMPLES
+g9     g9r15of.rit  0.5   mm/s     0-0.2  100  6306
+g10    g10r15of.let 0.5   mm/s     0-0.2  100  6132
+g11    g11r15of.let 0.1   mm/s     0-0.2  100  6258
+g12    g12r15of.rit 0.2   mm/s     0-0.2  100  6348
+g13    g13r15of.rit 0.2   mm/s     0-0.2  100  6558
+s14    s14r15of.rit 0.5   mm/s     0-0.2  100  6726
+s15    s15r15of.rit 0.5   mm/s     0-0.2  100  6252
+s16    s16r15of.let 0.5   mm/s     0-0.2  100  6486
+#------------------------------------------------------------------------
+# SUBJECTS WITH LOW AMPLITUDE TREMOR:
+# REST TREMOR, 30 MINUTES AFTER DBS STOPPED (MEDICATION OFF) (n=8 files)
+#------------------------------------------------------------------------
+SUBJ   FILE         RANGE VELOCITY LASER  RATE SAMPLES
+g9     g9r30of.rit  0.5   mm/s     0-0.2  100  6318
+g10    g10r30of.let 0.5   mm/s     0-0.2  100  6198
+g11    g11r30of.let 0.1   mm/s     0-0.2  100  6594
+g12    g12r30of.rit 0.2   mm/s     0-0.2  100  6354
+g13    g13r30of.rit 0.2   mm/s     0-0.2  100  7140
+s14    s14r30of.rit 0.5   mm/s     0-0.2  100  6276
+s15    s15r30of.rit 0.5   mm/s     0-0.2  100  6438
+s16    s16r30of.let 0.5   mm/s     0-0.2  100  6588
+#------------------------------------------------------------------------
+# SUBJECTS WITH LOW AMPLITUDE TREMOR:
+# REST TREMOR, 45 MINUTES AFTER DBS STOPPED (MEDICATION OFF) (n=8 files)
+#------------------------------------------------------------------------
+SUBJ   FILE         RANGE VELOCITY LASER  RATE SAMPLES
+g9     g9r45of.rit  0.5   mm/s     0-0.2  100  6240
+g10    g10r45of.let 0.5   mm/s     0-0.2  100  6210
+g11    g11r45of.let 0.1   mm/s     0-0.2  100  6318
+g12    g12r45of.rit 0.2   mm/s     0-0.2  100  6300
+g13    g13r45of.rit 0.2   mm/s     0-0.2  100  6264
+s14    s14r45of.rit 0.5   mm/s     0-0.2  100  6282
+s15    s15r45of.rit 0.5   mm/s     0-0.2  100  7104
+s16    s16r45of.let 0.5   mm/s     0-0.2  100  6744
+#------------------------------------------------------------------------
+# SUBJECTS WITH LOW AMPLITUDE TREMOR:
+# REST TREMOR, 60 MINUTES AFTER DBS STOPPED (MEDICATION OFF) (n=8 files)
+#------------------------------------------------------------------------
+SUBJ   FILE         RANGE VELOCITY LASER  RATE SAMPLES
+g9     g9r60of.rit  0.5   mm/s     0-0.2  100  6312
+g10    g10r60of.let 0.5   mm/s     0-0.2  100  6180
+g11    g11r60of.let 0.1   mm/s     0-0.2  100  6282
+g12    g12r60of.rit 0.2   mm/s     0-0.2  100  6342
+g13    g13r60of.rit 0.2   mm/s     0-0.2  100  6342
+s14    s14r60of.rit 0.5   mm/s     0-0.2  100  6342
+s15    s15r60of.rit 0.5   mm/s     0-0.2  100  6516
+s16    s16r60of.let 0.5   mm/s     0-0.2  100  7302
+#----------------------------------------------------------------------------
+# SUBJ:  g = GPi = Globus Pallidus interna
+#        v = Vim = Ventro-intermediate nucleus of the thalamus
+#        s = STN = subthalamic nucleus
+# RANGE:    Range (V)  Precision (+/- mm/s)
+#               2.0        1.0 
+#               1.0        0.5
+#               0.5        0.25
+#               0.2        0.1
+#               0.1        0.05
+# VELOCITY: units of velocity in recordings 
+#           (mm/s or m/s)
+# LASER: laser speed setting 
+#        (0-0.2 m/s or 0-1 m/s)
+# RATE: sampling rate in Hz
+# 
+# SAMPLES: number of samples in recording
+#----------------------------------------------------------------------------

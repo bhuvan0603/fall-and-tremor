@@ -1,0 +1,34 @@
+# ============================================
+# Fall & Tremor Detection System - Requirements
+# ============================================
+
+# Deep Learning Framework
+tensorflow>=2.13.0
+
+# Data Processing
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Web Framework
+flask>=2.3.0
+werkzeug>=2.3.0
+
+# Computer Vision (video/webcam fall detection)
+opencv-python>=4.8.0
+
+# Machine Learning (tremor detection - XGBoost pipeline)
+scikit-learn>=1.3.0
+xgboost>=2.0.0
+joblib>=1.3.0
+
+# Signal Processing (tremor feature extraction)
+scipy>=1.11.0
+
+# MediaPipe (pose estimation for fall detection)
+mediapipe>=0.10.0
+
+# PhysioNet data access (tremor dataset pipeline)
+wfdb>=4.1.0
+
+# Progress Bars
+tqdm>=4.65.0
